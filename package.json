@@ -1,0 +1,46 @@
+{
+  "name": "enterprise-playwright-framework",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright & API Hybrid Test Automation Framework featuring Advanced Page Object Model, authenticated state storage, network interception, Zod contract schemas, and GitHub Actions parallel sharding.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "playwright test",
+    "test:unit": "bun test tests/unit",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test --grep @api",
+    "test:mock": "playwright test --grep @mock",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "test-automation",
+    "typescript",
+    "page-object-model",
+    "api-testing",
+    "zod",
+    "ci-cd",
+    "github-actions",
+    "sharding",
+    "qa-architecture"
+  ],
+  "author": "Manuel Morales Calderón <manumorales16@gmail.com> (https://github.com/manu-code-maker)",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "@playwright/test": "^1.65.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "bun-types": "^1.4.4",
+    "typescript": "^5.7.0"
+  }
+}

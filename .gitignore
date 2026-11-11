@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+bun.lock
+
+# Test artifacts and reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.auth/
+
+# Build output
+dist/
+build/
+out/
+
+# Environment files
+.env*
+!*.example
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Binarios y ejecutables compilados (prohibidos por safe-git-publishing)
+*.exe
+*.bat
+*.cmd
+*.dll
+*.elf
+*.bin
+*.pkg
+*.zip
+*.tar.gz
+*.7z
